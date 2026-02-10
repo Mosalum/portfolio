@@ -113,7 +113,11 @@ function renderGrid(){
     const item = document.createElement("div");
     item.className = "work-item";
     item.innerHTML = `
-      <img class="work-thumb" src="${w.thumb}" alt="${escapeHtml(w.title)}" loading="lazy" />
+      <img class="work-thumb"
+     src="${w.thumb}"
+     alt="${escapeHtml(w.title)}"
+     loading="lazy"
+     decoding="async" />
       <div class="work-info">
         <p class="work-title">${escapeHtml(w.title)}</p>
         <p class="work-sub">${escapeHtml(w.category || "Other")}</p>
@@ -135,6 +139,11 @@ function renderAll(){
 }
 
 async function init(){
+    const navToggle = document.getElementById("navToggle");
+  const navLinks = document.getElementById("navLinks");
+  if(navToggle && navLinks){
+    navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
+  }
   const yearEl = el("year");
   if(yearEl) yearEl.textContent = String(new Date().getFullYear());
 
