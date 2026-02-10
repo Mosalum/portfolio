@@ -1,0 +1,29 @@
+[
+  {
+    "id": "w1",
+    "title": "Electronics Service Banner",
+    "category": "Graphics Design",
+    "thumb": "assets/img/banner1.jpg",
+    "description": "Modern banner design for electronics service center with showroom feel.",
+    "tags": ["Banner", "Branding", "Photoshop"],
+    "link": ""
+  },
+  {
+    "id": "w2",
+    "title": "Portfolio Website UI",
+    "category": "Web Design",
+    "thumb": "assets/img/web1.jpg",
+    "description": "Clean dark UI with accent for a personal branding website.",
+    "tags": ["HTML", "CSS", "Responsive"],
+    "link": ""
+  },
+  {
+    "id": "w3",
+    "title": "Router Setup & Access Control",
+    "category": "IT Specialist",
+    "thumb": "assets/img/it1.jpg",
+    "description": "Network configuration & device access control for home/office use.",
+    "tags": ["Networking", "WiFi", "Support"],
+    "link": ""
+  }
+]

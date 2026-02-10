@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Mohamed Salum | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top">
+        <span class="logo-dot"></span>
+        <span class="brand-text">Mohamed Salum</span>
+      </a>
+
+      <nav class="links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="web-design.html">Web</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="it.html">IT</a>
+        <a href="#work">All</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-ghost" href="admin.html" title="Manage your works">Admin</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          
+          <h1>Web Designer • Graphics Designer • IT Specialist</h1>
+          <p class="lead">
+            I build modern websites, create strong visuals, and solve real IT problems with reliable support.
+          </p>
+
+          <div class="hero-cta">
+            <a class="btn btn-ghost"
+                href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio."
+                target="_blank" rel="noreferrer">
+                WhatsApp Me
+            </a>
+
+            <a class="btn" href="#work">View My Work</a>
+            <a class="btn btn-ghost" href="#contact">Hire / Contact</a>
+          </div>
+
+          <div class="stats">
+            <div class="stat">
+              <div class="stat-num">Fast</div>
+              <div class="stat-txt">Delivery & Support</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Clean</div>
+              <div class="stat-txt">UI/UX & Layout</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">Reliable</div>
+              <div class="stat-txt">IT Troubleshooting</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="card">
+            <h3>What I Do</h3>
+            <ul class="bullets">
+              <li>Website Design & Redesign (Responsive)</li>
+              <li>Branding, Posters, Banners & Social Media Designs</li>
+              <li>IT Support: Troubleshooting, Network & Systems Setup</li>
+            </ul>
+            <div class="mini">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JS</span>
+              <span class="pill">Photoshop</span>
+              <span class="pill">Canva</span>
+              <span class="pill">Networking</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">
+            I’m a results-driven designer with strong IT support skills—focused on real-world impact.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Profile</h3>
+            <p>
+              I combine design and technical problem-solving to help businesses look professional and run smoothly.
+              My strength is delivering clean visuals, usable websites, and practical IT solutions.
+            </p>
+          </div>
+          <div class="card">
+            <h3>What you can expect</h3>
+            <ul class="bullets">
+              <li>Clear communication & on-time delivery</li>
+              <li>Modern design with clean structure</li>
+              <li>Support after delivery (updates & fixes)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Skills</h2>
+          <p class="muted">Core areas I specialize in</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="card">
+            <h3>Web Design</h3>
+            <ul class="bullets">
+              <li>HTML5, CSS3, JavaScript</li>
+              <li>Responsive layouts</li>
+              <li>UI/UX basics</li>
+              <li>Performance & clean structure</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Graphics Design</h3>
+            <ul class="bullets">
+              <li>Branding & visual identity</li>
+              <li>Posters, banners, flyers</li>
+              <li>Social media creatives</li>
+              <li>Photoshop / Canva</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>IT Specialist</h3>
+            <ul class="bullets">
+              <li>Troubleshooting & maintenance</li>
+              <li>Network setup (routers, Wi-Fi)</li>
+              <li>OS/software installation</li>
+              <li>User support & diagnostics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section id="work" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Work Gallery</h2>
+          <p class="muted">
+            Works are organized by category. Add more anytime via <span class="accent">Admin</span>.
+          </p>
+        </div>
+
+        <div class="work-toolbar">
+          <input id="searchInput" class="input" placeholder="Search work (title, tags)..." />
+          <div id="categoryTabs" class="tabs"></div>
+        </div>
+
+        <div id="workGrid" class="work-grid"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Contact</h2>
+          <p class="muted">Ready to work together? Reach me here.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card">
+            <h3>Quick message</h3>
+            <p class="muted">Fill these on your real contacts:</p>
+            <div class="contact-list">
+              Email: <a class="accent" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal" target="_blank" rel="noreferrer">mosalum24@gmail.com</a>
+              <div><span class="k">WhatsApp:</span> <span class="v">+255 678 635 302</span></div>
+              GitHub: <a class="accent" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">github.com/Mosalum</a>
+              <div><span class="k">Location:</span> <span class="v">Tanzania</span></div>
+            </div>
+
+            <div class="hero-cta">
+              <a class="btn" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal">Email Me</a>
+              <a class="btn btn-ghost" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">GitHub</a>
+                <a class="btn btn-ghost"
+                href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you."
+                target="_blank" rel="noreferrer">
+                WhatsApp
+                </a>
+            </div>
+          </div>
+
+          <div class="card">
+            <h3>Links</h3>
+            <ul class="bullets">
+              <li>LinkedIn: <span class="muted">add your link</span></li>
+              <li>Behance: <span class="muted">add your link</span></li>
+              <li>GitHub: <span class="muted">add your link</span></li>
+            </ul>
+            <p class="muted small">
+              Tip: Kwa job application, weka pia “Download CV” (PDF) button.
+            </p>
+          </div>
+        </div>
+
+        <footer class="footer">
+        <div class="muted small">© <span id="year"></span> Mohamed Salum — Portfolio</div>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-body" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="1">✕</button>
+      <div class="modal-content">
+        <img id="modalImg" alt="" />
+        <div class="modal-meta">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc" class="muted"></p>
+          <div id="modalTags" class="tag-row"></div>
+          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

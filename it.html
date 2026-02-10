@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Salum | IT Specialist</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-dot"></span>
+        <span class="brand-text">Mohamed Salum</span>
+      </a>
+
+      <nav class="links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="web-design.html">Web</a>
+        <a href="graphics.html">Graphics</a>
+        <a href="it.html">IT</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-ghost" href="admin.html">Admin</a>
+    </div>
+  </header>
+
+  <main class="section" data-category-page="1" data-category="IT Specialist">
+    <div class="container">
+      <div class="section-head">
+        <h2>IT Specialist</h2>
+        <p class="muted">Selected web projects (UI, responsive layouts, landing pages).</p>
+      </div>
+
+      <div class="work-toolbar">
+        <input id="searchInput" class="input" placeholder="Search web work..." />
+        <a class="btn btn-ghost" href="index.html#work">View All</a>
+      </div>
+
+      <div id="workGrid" class="work-grid"></div>
+    </div>
+  </main>
+
+  <!-- Modal (same as index) -->
+  <div id="modal" class="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="1"></div>
+    <div class="modal-body" role="dialog" aria-modal="true">
+      <button class="modal-close" data-close="1">✕</button>
+      <div class="modal-content">
+        <img id="modalImg" alt="" />
+        <div class="modal-meta">
+          <h3 id="modalTitle"></h3>
+          <p id="modalDesc" class="muted"></p>
+          <div id="modalTags" class="tag-row"></div>
+          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

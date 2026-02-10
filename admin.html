@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="sw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mohamed Salum | Admin</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo-dot"></span>
+        <span class="brand-text">Mohamed Salum</span>
+      </a>
+      <nav class="links">
+        <a href="index.html#work">Back</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+
+      <div class="grid-2">
+        <!-- LOGIN -->
+        <div id="loginCard" class="card">
+          <h3>Admin Login</h3>
+          <input class="input" id="adminUser" placeholder="Username" />
+          <input class="input" id="adminPass" type="password" placeholder="Password" style="margin-top:10px" />
+          <div class="hero-cta" style="margin-top:12px">
+            <button class="btn" id="loginBtn" type="button">Login</button>
+          </div>
+          <p class="muted small">Authorized access only.</p>
+        </div>
+
+        <!-- FORM -->
+        <div id="uploadCard" class="card" style="display:none;">
+          <div style="display:flex; justify-content:space-between; align-items:center; gap:10px;">
+            <h3>Add Work (Generate JSON)</h3>
+            <button class="btn btn-ghost" type="button" onclick="adminLogout()">Logout</button>
+          </div>
+
+          <form id="workForm">
+            <label>Title</label>
+            <input class="input" id="title" required placeholder="e.g. Company Website UI" />
+
+            <label style="margin-top:10px;">Category</label>
+            <select class="input" id="category" required>
+              <option>Web Design</option>
+              <option>Graphics Design</option>
+              <option>IT Specialist</option>
+            </select>
+
+            <label style="margin-top:10px;">OneDrive Image URL (use ?download=1)</label>
+            <input class="input" id="thumb" required placeholder="https://1drv.ms/...?.download=1" />
+
+            <label style="margin-top:10px;">Description</label>
+            <textarea class="input" id="desc" rows="4" placeholder="Problem, solution, tools, impact..."></textarea>
+
+            <label style="margin-top:10px;">Tags (comma separated)</label>
+            <input class="input" id="tags" placeholder="HTML, CSS, Banner" />
+
+            <label style="margin-top:10px;">Optional link (Live site / GitHub / Behance)</label>
+            <input class="input" id="link" placeholder="https://..." />
+
+            <div class="hero-cta" style="margin-top:12px">
+              <button class="btn" type="submit">Generate JSON</button>
+            </div>
+
+            <label style="margin-top:14px;">Generated JSON (copy & paste into works.json)</label>
+            <textarea class="input" id="jsonOut" rows="10" readonly></textarea>
+
+            <p class="muted small">
+              Next: open <b>works.json</b>, paste the object inside the array, then push to GitHub.
+            </p>
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>
