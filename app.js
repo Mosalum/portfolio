@@ -140,9 +140,6 @@ function renderAll(){
 
 async function init(){
 
-  // ===============================
-// MOBILE NAV TOGGLE (FIXED)
-// ===============================
 const navToggle = document.getElementById("navToggle");
 const navLinks  = document.getElementById("navLinks");
 
@@ -150,9 +147,11 @@ if (navToggle && navLinks) {
 
   // toggle on button click
   navToggle.addEventListener("click", (e) => {
-    e.stopPropagation(); // zuia click kuenda body
-    navLinks.classList.toggle("open");
-  });
+  e.stopPropagation();
+  navLinks.classList.toggle("open");
+  navToggle.textContent = navLinks.classList.contains("open") ? "✕" : "☰";
+});
+
 
   // close menu when clicking a link
   navLinks.querySelectorAll("a").forEach(link => {
