@@ -139,11 +139,36 @@ function renderAll(){
 }
 
 async function init(){
-    const navToggle = document.getElementById("navToggle");
-  const navLinks = document.getElementById("navLinks");
-  if(navToggle && navLinks){
-    navToggle.addEventListener("click", () => navLinks.classList.toggle("open"));
-  }
+
+  // ===============================
+// MOBILE NAV TOGGLE (FIXED)
+// ===============================
+const navToggle = document.getElementById("navToggle");
+const navLinks  = document.getElementById("navLinks");
+
+if (navToggle && navLinks) {
+
+  // toggle on button click
+  navToggle.addEventListener("click", (e) => {
+    e.stopPropagation(); // zuia click kuenda body
+    navLinks.classList.toggle("open");
+  });
+
+  // close menu when clicking a link
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("open");
+    });
+  });
+
+  // close menu when clicking outside
+  document.addEventListener("click", (e) => {
+    if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+      navLinks.classList.remove("open");
+    }
+  });
+}
+
   const yearEl = el("year");
   if(yearEl) yearEl.textContent = String(new Date().getFullYear());
 
