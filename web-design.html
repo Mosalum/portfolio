@@ -3,25 +3,30 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mohamed Salum | Web Design</title>
+  <title>Mohamed Salum | Web Design Projects</title>
+  <meta name="description" content="Selected web design projects by Mohamed Salum, including responsive websites, landing pages, and UI work." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <span class="logo-dot"></span>
+        <img class="brand-avatar" src="pass.png" alt="Mohamed Salum" />
         <span class="brand-text">Mohamed Salum</span>
       </a>
 
-      <nav class="links">
-        <a href="index.html#about">About</a>
-        <a href="index.html#skills">Skills</a>
-        <a href="web-design.html">Web</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="it.html">IT</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+        <nav class="links" id="siteNav" aria-label="Main navigation">
+          <a href="index.html#about">About</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="web-design.html">Web</a>
+          <a href="graphics.html">Graphics</a>
+          <a href="it.html">IT</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">🌙</button>
+      </div>
     </div>
   </header>
 
@@ -29,11 +34,11 @@
     <div class="container">
       <div class="section-head">
         <h2>Web Design</h2>
-        <p class="muted">Selected web projects (UI, responsive layouts, landing pages).</p>
+        <p class="muted">Selected web projects including landing pages, business websites, and responsive UI work.</p>
       </div>
 
       <div class="work-toolbar">
-        <input id="searchInput" class="input" placeholder="Search web work..." />
+        <input id="searchInput" class="input" placeholder="Search web projects..." />
         <a class="btn btn-ghost" href="index.html#work">View All</a>
       </div>
 
@@ -41,23 +46,23 @@
     </div>
   </main>
 
-  <!-- Modal (same as index) -->
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-backdrop" data-close="1"></div>
-    <div class="modal-body" role="dialog" aria-modal="true">
-      <button class="modal-close" data-close="1">✕</button>
+    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close="1" aria-label="Close project preview">✕</button>
       <div class="modal-content">
         <img id="modalImg" alt="" />
         <div class="modal-meta">
           <h3 id="modalTitle"></h3>
           <p id="modalDesc" class="muted"></p>
           <div id="modalTags" class="tag-row"></div>
-          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Link</a>
+          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Project</a>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="works-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

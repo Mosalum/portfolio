@@ -1,51 +1,58 @@
 <!doctype html>
-<html lang="sw">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Mohamed Salum | Portfolio</title>
+  <title>Mohamed Salum | Web Designer, Graphics Designer & IT Specialist</title>
+  <meta name="description" content="Portfolio ya Mohamed Salum inayonyesha huduma za web design, graphics design, na IT support kwa biashara na taasisi." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header class="nav">
     <div class="container nav-inner">
-      <a class="brand" href="#top">
-        <span class="logo-dot"></span>
+      <a class="brand" href="#top" aria-label="Go to homepage">
+        <img class="brand-avatar" src="pass.png" alt="Mohamed Salum" />
         <span class="brand-text">Mohamed Salum</span>
       </a>
 
-      <nav class="links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="web-design.html">Web</a>
-        <a href="graphics.html">Graphics</a>
-        <a href="it.html">IT</a>
-        <a href="#work">All</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">☰</button>
+        <nav class="links" id="siteNav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="web-design.html">Web</a>
+          <a href="graphics.html">Graphics</a>
+          <a href="it.html">IT</a>
+          <a href="#work">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">🌙</button>
+      </div>
     </div>
   </header>
 
   <main id="top">
-    <!-- HERO -->
     <section class="hero">
       <div class="container hero-grid">
         <div>
-          
+          <span class="badge">Available for freelance and contract work</span>
           <h1>Web Designer • Graphics Designer • IT Specialist</h1>
           <p class="lead">
-            I build modern websites, create strong visuals, and solve real IT problems with reliable support.
+            I design modern websites, create strong brand visuals, and provide practical IT support that helps businesses work better every day.
           </p>
 
           <div class="hero-cta">
-            <a class="btn btn-ghost"
-                href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio."
-                target="_blank" rel="noreferrer">
-                WhatsApp Me
+            <a
+              class="btn"
+              href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you."
+              target="_blank"
+              rel="noreferrer"
+            >
+              Hire Me on WhatsApp
             </a>
-
-            <a class="btn" href="#work">View My Work</a>
-            <a class="btn btn-ghost" href="#contact">Hire / Contact</a>
+            <a class="btn btn-ghost" href="MohamedCv.pdf" download="Mohamed-Salum-CV.pdf">Download CV</a>
+            <a class="btn btn-ghost" href="#work">View My Work</a>
+            <a class="btn btn-ghost" href="#contact">Contact Me</a>
           </div>
 
           <div class="stats">
@@ -68,14 +75,14 @@
           <div class="card">
             <h3>What I Do</h3>
             <ul class="bullets">
-              <li>Website Design & Redesign (Responsive)</li>
-              <li>Branding, Posters, Banners & Social Media Designs</li>
-              <li>IT Support: Troubleshooting, Network & Systems Setup</li>
+              <li>Website design and redesign with responsive layouts</li>
+              <li>Branding, posters, banners, and social media graphics</li>
+              <li>IT support, troubleshooting, networking, and systems setup</li>
             </ul>
             <div class="mini">
               <span class="pill">HTML</span>
               <span class="pill">CSS</span>
-              <span class="pill">JS</span>
+              <span class="pill">JavaScript</span>
               <span class="pill">Photoshop</span>
               <span class="pill">Canva</span>
               <span class="pill">Networking</span>
@@ -85,13 +92,12 @@
       </div>
     </section>
 
-    <!-- ABOUT -->
     <section id="about" class="section">
       <div class="container">
         <div class="section-head">
           <h2>About</h2>
           <p class="muted">
-            I’m a results-driven designer with strong IT support skills—focused on real-world impact.
+            I am a results-driven designer and IT specialist focused on creating clear digital experiences and dependable technical support.
           </p>
         </div>
 
@@ -99,23 +105,22 @@
           <div class="card">
             <h3>Profile</h3>
             <p>
-              I combine design and technical problem-solving to help businesses look professional and run smoothly.
-              My strength is delivering clean visuals, usable websites, and practical IT solutions.
+              I combine design thinking and technical problem-solving to help businesses look professional, communicate clearly, and run smoothly.
+              My strength is delivering clean visuals, usable websites, and practical IT solutions that solve real needs.
             </p>
           </div>
           <div class="card">
             <h3>What you can expect</h3>
             <ul class="bullets">
-              <li>Clear communication & on-time delivery</li>
+              <li>Clear communication and on-time delivery</li>
               <li>Modern design with clean structure</li>
-              <li>Support after delivery (updates & fixes)</li>
+              <li>Support after delivery for updates and fixes</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
     <section id="skills" class="section">
       <div class="container">
         <div class="section-head">
@@ -127,46 +132,45 @@
           <div class="card">
             <h3>Web Design</h3>
             <ul class="bullets">
-              <li>HTML5, CSS3, JavaScript</li>
+              <li>HTML5, CSS3, and JavaScript</li>
               <li>Responsive layouts</li>
-              <li>UI/UX basics</li>
-              <li>Performance & clean structure</li>
+              <li>UI/UX fundamentals</li>
+              <li>Performance and clean structure</li>
             </ul>
           </div>
           <div class="card">
             <h3>Graphics Design</h3>
             <ul class="bullets">
-              <li>Branding & visual identity</li>
-              <li>Posters, banners, flyers</li>
+              <li>Branding and visual identity</li>
+              <li>Posters, banners, and flyers</li>
               <li>Social media creatives</li>
-              <li>Photoshop / Canva</li>
+              <li>Photoshop and Canva</li>
             </ul>
           </div>
           <div class="card">
             <h3>IT Specialist</h3>
             <ul class="bullets">
-              <li>Troubleshooting & maintenance</li>
-              <li>Network setup (routers, Wi-Fi)</li>
-              <li>OS/software installation</li>
-              <li>User support & diagnostics</li>
+              <li>Troubleshooting and maintenance</li>
+              <li>Network setup for routers and Wi-Fi</li>
+              <li>OS and software installation</li>
+              <li>User support and diagnostics</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- WORK -->
     <section id="work" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Work Gallery</h2>
           <p class="muted">
-            Works are organized by category. Add more anytime via <span class="accent">Admin</span>.
+            Explore selected projects across web design, graphics design, and IT support.
           </p>
         </div>
 
         <div class="work-toolbar">
-          <input id="searchInput" class="input" placeholder="Search work (title, tags)..." />
+          <input id="searchInput" class="input" placeholder="Search projects by title, category, or tag..." />
           <div id="categoryTabs" class="tabs"></div>
         </div>
 
@@ -174,72 +178,66 @@
       </div>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact" class="section">
       <div class="container">
         <div class="section-head">
           <h2>Contact</h2>
-          <p class="muted">Ready to work together? Reach me here.</p>
+          <p class="muted">Ready to work together? Reach me through any of the channels below.</p>
         </div>
 
         <div class="grid-2">
           <div class="card">
-            <h3>Quick message</h3>
-            <p class="muted">Fill these on your real contacts:</p>
+            <h3>Quick contact</h3>
+            <p class="muted">Send a message and I will get back to you as soon as possible.</p>
             <div class="contact-list">
-              Email: <a class="accent" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal" target="_blank" rel="noreferrer">mosalum24@gmail.com</a>
-              <div><span class="k">WhatsApp:</span> <span class="v">+255 678 635 302</span></div>
-              GitHub: <a class="accent" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">github.com/Mosalum</a>
+              <div><span class="k">Email:</span> <a class="accent" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal">mosalum24@gmail.com</a></div>
+              <div><span class="k">WhatsApp:</span> <a class="accent" href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noreferrer">+255 678 635 302</a></div>
+              <div><span class="k">GitHub:</span> <a class="accent" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">github.com/Mosalum</a></div>
               <div><span class="k">Location:</span> <span class="v">Tanzania</span></div>
             </div>
 
             <div class="hero-cta">
               <a class="btn" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal">Email Me</a>
+              <a class="btn btn-ghost" href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noreferrer">WhatsApp</a>
               <a class="btn btn-ghost" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">GitHub</a>
-                <a class="btn btn-ghost"
-                href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you."
-                target="_blank" rel="noreferrer">
-                WhatsApp
-                </a>
+              <a class="btn btn-ghost" href="MohamedCv.pdf" download="Mohamed-Salum-CV.pdf">Download CV</a>
             </div>
           </div>
 
           <div class="card">
-            <h3>Links</h3>
+            <h3>Professional links</h3>
             <ul class="bullets">
-              <li>LinkedIn: <span class="muted"></span></li>
-              <li>GitHub: <span class="muted">https://github.com/Mosalum/</span></li>
+              <li>LinkedIn: <a class="accent" href="https://www.linkedin.com/in/mohamed-mohamed-8a912725b/" target="_blank" rel="noreferrer">View profile</a></li>
+              <li>Behance: <a class="accent" href="https://www.behance.net/mosalum" target="_blank" rel="noreferrer">See design work</a></li>
+              <li>GitHub: <a class="accent" href="https://github.com/Mosalum/" target="_blank" rel="noreferrer">Browse repositories</a></li>
             </ul>
-            <p class="muted small">
-              Tip: Kwa job application, weka pia “Download CV” (PDF) button.
-            </p>
           </div>
         </div>
 
         <footer class="footer">
-        <div class="muted small">© <span id="year"></span> Mohamed Salum — Portfolio</div>
+          <div class="muted small">© <span id="year"></span> Mohamed Salum — Portfolio</div>
         </footer>
       </div>
     </section>
   </main>
 
-  <!-- MODAL -->
   <div id="modal" class="modal" aria-hidden="true">
     <div class="modal-backdrop" data-close="1"></div>
-    <div class="modal-body" role="dialog" aria-modal="true">
-      <button class="modal-close" data-close="1">✕</button>
+    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" data-close="1" aria-label="Close project preview">✕</button>
       <div class="modal-content">
         <img id="modalImg" alt="" />
         <div class="modal-meta">
           <h3 id="modalTitle"></h3>
           <p id="modalDesc" class="muted"></p>
           <div id="modalTags" class="tag-row"></div>
-          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Link</a>
+          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Project</a>
         </div>
       </div>
     </div>
   </div>
 
+  <script src="works-data.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
