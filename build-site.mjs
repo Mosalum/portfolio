@@ -7,7 +7,7 @@ const output = path.resolve(root, "_site");
 if (output !== path.join(root, "_site")) throw new Error("Refusing to build outside the portfolio's _site directory.");
 await rm(output, { recursive: true, force: true });
 await mkdir(output, { recursive: true });
-for (const file of ["index.html", "services.html", "work.html", "about.html", "contact.html", "web-design.html", "graphics.html", "it.html", "admin.html", "styles.css", "app.js", "contact.js", "nav.js", "works.json", "MohamedCv.pdf", "pass.png", "assets/whatsapp-icon.webp", ".nojekyll"]) {
+for (const file of ["index.html", "services.html", "work.html", "about.html", "cv.html", "contact.html", "web-design.html", "graphics.html", "it.html", "admin.html", "styles.css", "app.js", "contact.js", "nav.js", "works.json", "MohamedCv.pdf", "pass.png", "assets/whatsapp-icon.webp", ".nojekyll"]) {
   await cp(path.join(root, file), path.join(output, file));
 }
 const projects = JSON.parse(await readFile(path.join(root, "works.json"), "utf8"));
