@@ -35,6 +35,8 @@ Push kwenda `main` huanzisha GitHub Actions kujenga na kuchapisha GitHub Pages. 
 
 Gallery ina kazi 9 zilizopo, ikiwemo michoro 8 na Wapambanaji VICOBA kulingana na maudhui ya umma ya GitHub. Hakuna takwimu wala madai ya deployment yaliyothibitishwa kwa VICOBA. Wasifu umetumia CV iliyokuwepo. Hakukuwa na ushahidi wa umma wa miradi ya hospitali, CCTV, mitandao au nyaraka za IT kwenye nakala ya portfolio.
 
+Alama ya profile hutumia picha ya `pass.png` iliyokuwepo kwenye mradi. Alama ya WhatsApp imetolewa kwenye [favicon rasmi ya WhatsApp](https://www.whatsapp.com/favicon.ico), imeachwa bila kubadilishwa na imewekwa kama alama ndogo kando ya maandishi “WhatsApp”.
+
 Usichapishe data za wagonjwa au wanachama, credentials, maelezo ya mtandao wa ndani, taarifa za uendeshaji wa hospitali, au kazi ya mteja bila idhini. Kazi unazopush kwenye `main` na GitHub Pages huwa za umma.
 
 ## Yaliyohitaji ukaguzi wako kabla ya kutangaza
