@@ -31,6 +31,10 @@ Push kwenda `main` huanzisha GitHub Actions kujenga na kuchapisha GitHub Pages. 
 - `npm run preview` hutoa tovuti ya kawaida kwenye `http://localhost:4173`.
 - `npm run admin` huwasha paneli binafsi ya uhariri na uchapishaji kwenye localhost.
 
+## Kusasisha CV
+
+CV ya PDF inayopakuliwa iko kwenye `MohamedCv.pdf`. Rekebisha taarifa zilizo ndani ya `scripts/generate_cv.py`, kisha tengeneza upya PDF kwa `py -m pip install -r scripts/requirements-cv.txt` na `py scripts/generate_cv.py`. Tumia `npm run build:site` kuhakiki kuwa PDF imekopiwa kwenye `_site/` kabla ya kusukuma mabadiliko.
+
 ## Maudhui yaliyopo na faragha
 
 Gallery ina kazi 9 zilizopo, ikiwemo michoro 8 na Wapambanaji VICOBA iliyokamilika. Maelezo ya VICOBA yametokana na screenshot ya dashboard iliyotolewa; source repository ni private na haijaunganishwa hadharani. Wasifu umetumia CV iliyokuwepo. Hakukuwa na ushahidi wa umma wa miradi ya hospitali, CCTV, mitandao au nyaraka za IT kwenye nakala ya portfolio.
