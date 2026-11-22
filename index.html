@@ -1,243 +1,49 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Mohamed Salum | Web Designer, Graphics Designer & IT Specialist</title>
-  <meta name="description" content="Portfolio ya Mohamed Salum inayonyesha huduma za web design, graphics design, na IT support kwa biashara na taasisi." />
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10110f"><meta name="description" content="Independent IT support, network services, web development and graphic design by Mohamed Salum in Dar es Salaam, Tanzania.">
+  <meta property="og:type" content="website"><meta property="og:title" content="Mosalum Digital | IT & Digital Services"><meta property="og:description" content="Practical technology services for people and businesses: IT support, networks, websites and design."><meta property="og:image" content="https://raw.githubusercontent.com/Mosalum/portfolio/main/pass.png">
+  <title>Mosalum Digital | IT Support, Web & Design in Tanzania</title>
+  <link rel="icon" href="pass.png"><link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="#top" aria-label="Go to homepage">
-        <img class="brand-avatar" src="pass.png" alt="Mohamed Salum" />
-        <span class="brand-text">Mohamed Salum</span>
-      </a>
-
-      <div class="nav-actions">
-        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav">☰</button>
-        <nav class="links" id="siteNav" aria-label="Main navigation">
-          <a href="#about">About</a>
-          <a href="#skills">Skills</a>
-          <a href="web-design.html">Web</a>
-          <a href="graphics.html">Graphics</a>
-          <a href="it.html">IT</a>
-          <a href="#work">Projects</a>
-          <a href="#contact">Contact</a>
-        </nav>
-        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch theme">🌙</button>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html" aria-label="Mosalum Digital, home"><span class="brand-mark" aria-hidden="true">M</span><span>Mosalum Digital<span class="brand-dot">.</span></span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation">Menu</button>
+    <nav class="nav-links" id="site-nav" aria-label="Main navigation"><details class="nav-services"><summary>Services</summary><div class="nav-service-menu"><a href="services.html">Service overview<small>Scope, process and quotes</small></a><a href="services.html#it-support">IT support<small>Computers and daily operations</small></a><a href="services.html#networks">Networking<small>Connectivity and infrastructure</small></a><a href="services.html#web">Web &amp; software<small>Websites and digital products</small></a><a href="services.html#design">Design &amp; documents<small>Visual and technical materials</small></a></div></details><a href="work.html">Work</a><a href="about.html">About</a><a href="contact.html">Contact</a><a class="nav-cta" href="contact.html">Request a quote <span aria-hidden="true">↗</span></a></nav>
+  </div></header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="status-dot"></span> Independent IT &amp; digital services · Tanzania</p>
+        <h1 id="hero-title">Technology that works for <span class="serif">your business.</span></h1>
+        <p class="hero-lead">I’m Mohamed Salum, an independent IT specialist and developer. I help people and small businesses solve day-to-day technology problems and build a stronger digital presence.</p>
+        <div class="hero-actions"><a class="button button-primary" href="services.html">Explore services <span aria-hidden="true">↗</span></a><a class="text-link" href="contact.html">Discuss a project <span aria-hidden="true">→</span></a></div>
+        <div class="hero-meta"><span>IT support &amp; networks</span><span>Web &amp; software</span><span>Graphic design</span></div>
       </div>
-    </div>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <span class="badge">Available for freelance and contract work</span>
-          <h1>Web Designer • Graphics Designer • IT Specialist</h1>
-          <p class="lead">
-            I design modern websites, create strong brand visuals, and provide practical IT support that helps businesses work better every day.
-          </p>
-
-          <div class="hero-cta">
-            <a
-              class="btn"
-              href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you."
-              target="_blank"
-              rel="noreferrer"
-            >
-              Hire Me on WhatsApp
-            </a>
-            <a class="btn btn-ghost" href="MohamedCv.pdf" download="Mohamed-Salum-CV.pdf">Download CV</a>
-            <a class="btn btn-ghost" href="#work">View My Work</a>
-            <a class="btn btn-ghost" href="#contact">Contact Me</a>
-          </div>
-
-          <div class="stats">
-            <div class="stat">
-              <div class="stat-num">Fast</div>
-              <div class="stat-txt">Delivery & Support</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Clean</div>
-              <div class="stat-txt">UI/UX & Layout</div>
-            </div>
-            <div class="stat">
-              <div class="stat-num">Reliable</div>
-              <div class="stat-txt">IT Troubleshooting</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-card">
-          <div class="card">
-            <h3>What I Do</h3>
-            <ul class="bullets">
-              <li>Website design and redesign with responsive layouts</li>
-              <li>Branding, posters, banners, and social media graphics</li>
-              <li>IT support, troubleshooting, networking, and systems setup</li>
-            </ul>
-            <div class="mini">
-              <span class="pill">HTML</span>
-              <span class="pill">CSS</span>
-              <span class="pill">JavaScript</span>
-              <span class="pill">Photoshop</span>
-              <span class="pill">Canva</span>
-              <span class="pill">Networking</span>
-            </div>
-          </div>
-        </div>
+      <aside class="hero-note" aria-label="How I work"><span class="note-index">DIRECT · PRACTICAL · PERSONAL</span><div class="note-mark" aria-hidden="true">MD</div><p>Work directly with me, from understanding the need through delivery and handover.</p><span class="note-bottom">MOHAMED SALUM · DAR ES SALAAM</span></aside>
+    </section>
+    <section class="trust-strip" aria-label="Service principles"><div class="container trust-items"><span>One point of contact</span><span>Clear scope before work starts</span><span>Practical handover</span><span>Remote or on-site by arrangement</span></div></section>
+    <section class="section container" aria-labelledby="services-title"><div class="section-heading"><div><p class="eyebrow">Ways I can help</p><h2 id="services-title">Technology, made <span class="serif">useful.</span></h2></div><a class="text-link" href="services.html">See all services <span aria-hidden="true">↗</span></a></div>
+      <div class="service-grid home-services">
+        <a class="service-card" href="services.html#it-support"><span class="service-no">01</span><h3>IT support &amp; operations</h3><p>Computer setup and troubleshooting, Windows support, printers, maintenance and everyday user support.</p><span class="card-link">Explore service <span aria-hidden="true">↗</span></span></a>
+        <a class="service-card" href="services.html#networks"><span class="service-no">02</span><h3>Networking &amp; infrastructure</h3><p>Network setup and connectivity troubleshooting for homes and small workplaces, scoped to the site.</p><span class="card-link">Explore service <span aria-hidden="true">↗</span></span></a>
+        <a class="service-card" href="services.html#web"><span class="service-no">03</span><h3>Websites &amp; software</h3><p>Responsive websites and practical web systems, with clear project scope and a usable handover.</p><span class="card-link">Explore service <span aria-hidden="true">↗</span></span></a>
+        <a class="service-card" href="services.html#design"><span class="service-no">04</span><h3>Graphic design &amp; documents</h3><p>Brand assets, event banners and promotional materials, plus clear technical documents.</p><span class="card-link">Explore service <span aria-hidden="true">↗</span></span></a>
       </div>
     </section>
-
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>About</h2>
-          <p class="muted">
-            I am a results-driven designer and IT specialist focused on creating clear digital experiences and dependable technical support.
-          </p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Profile</h3>
-            <p>
-              I combine design thinking and technical problem-solving to help businesses look professional, communicate clearly, and run smoothly.
-              My strength is delivering clean visuals, usable websites, and practical IT solutions that solve real needs.
-            </p>
-          </div>
-          <div class="card">
-            <h3>What you can expect</h3>
-            <ul class="bullets">
-              <li>Clear communication and on-time delivery</li>
-              <li>Modern design with clean structure</li>
-              <li>Support after delivery for updates and fixes</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <section class="section container" aria-labelledby="selected-title"><div class="section-heading"><div><p class="eyebrow">Selected projects</p><h2 id="selected-title">Work with a <span class="serif">purpose.</span></h2></div><a class="text-link" href="work.html">Browse all work <span aria-hidden="true">↗</span></a></div>
+      <div class="featured-grid" id="featured-work" aria-live="polite"><p class="muted">Loading selected projects…</p></div>
     </section>
-
-    <section id="skills" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Skills</h2>
-          <p class="muted">Core areas I specialize in</p>
-        </div>
-
-        <div class="grid-3">
-          <div class="card">
-            <h3>Web Design</h3>
-            <ul class="bullets">
-              <li>HTML5, CSS3, and JavaScript</li>
-              <li>Responsive layouts</li>
-              <li>UI/UX fundamentals</li>
-              <li>Performance and clean structure</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>Graphics Design</h3>
-            <ul class="bullets">
-              <li>Branding and visual identity</li>
-              <li>Posters, banners, and flyers</li>
-              <li>Social media creatives</li>
-              <li>Photoshop and Canva</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h3>IT Specialist</h3>
-            <ul class="bullets">
-              <li>Troubleshooting and maintenance</li>
-              <li>Network setup for routers and Wi-Fi</li>
-              <li>OS and software installation</li>
-              <li>User support and diagnostics</li>
-            </ul>
-          </div>
-        </div>
-      </div>
+    <section class="section container process-section"><div class="section-heading"><div><p class="eyebrow">A clear way of working</p><h2>From request to <span class="serif">handover.</span></h2></div><p class="section-intro">Each engagement starts with a conversation and a scope that fits the actual need.</p></div>
+      <ol class="process-grid"><li><span>01</span><h3>Tell me what you need</h3><p>Share the problem, the goal and any useful context.</p></li><li><span>02</span><h3>Agree the scope</h3><p>We discuss the approach, timing and quote before work begins.</p></li><li><span>03</span><h3>Build or resolve</h3><p>I carry out the agreed work and keep communication direct.</p></li><li><span>04</span><h3>Review together</h3><p>We check the outcome and I explain the handover or next steps.</p></li></ol>
     </section>
-
-    <section id="work" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Work Gallery</h2>
-          <p class="muted">
-            Explore selected projects across web design, graphics design, and IT support.
-          </p>
-        </div>
-
-        <div class="work-toolbar">
-          <input id="searchInput" class="input" placeholder="Search projects by title, category, or tag..." />
-          <div id="categoryTabs" class="tabs"></div>
-        </div>
-
-        <div id="workGrid" class="work-grid"></div>
-      </div>
-    </section>
-
-    <section id="contact" class="section">
-      <div class="container">
-        <div class="section-head">
-          <h2>Contact</h2>
-          <p class="muted">Ready to work together? Reach me through any of the channels below.</p>
-        </div>
-
-        <div class="grid-2">
-          <div class="card">
-            <h3>Quick contact</h3>
-            <p class="muted">Send a message and I will get back to you as soon as possible.</p>
-            <div class="contact-list">
-              <div><span class="k">Email:</span> <a class="accent" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal">mosalum24@gmail.com</a></div>
-              <div><span class="k">WhatsApp:</span> <a class="accent" href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noreferrer">+255 678 635 302</a></div>
-              <div><span class="k">GitHub:</span> <a class="accent" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">github.com/Mosalum</a></div>
-              <div><span class="k">Location:</span> <span class="v">Tanzania</span></div>
-            </div>
-
-            <div class="hero-cta">
-              <a class="btn" href="mailto:mosalum24@gmail.com?subject=Portfolio%20Inquiry%20-%20Mosal">Email Me</a>
-              <a class="btn btn-ghost" href="https://wa.me/255678635302?text=Hello%20Mohamed%20Salum,%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20work%20with%20you." target="_blank" rel="noreferrer">WhatsApp</a>
-              <a class="btn btn-ghost" href="https://github.com/Mosalum" target="_blank" rel="noreferrer">GitHub</a>
-              <a class="btn btn-ghost" href="MohamedCv.pdf" download="Mohamed-Salum-CV.pdf">Download CV</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <h3>Professional links</h3>
-            <ul class="bullets">
-              <li>LinkedIn: <a class="accent" href="https://www.linkedin.com/in/mohamed-mohamed-8a912725b/" target="_blank" rel="noreferrer">View profile</a></li>
-              <li>Behance: <a class="accent" href="https://www.behance.net/mosalum" target="_blank" rel="noreferrer">See design work</a></li>
-              <li>GitHub: <a class="accent" href="https://github.com/Mosalum/" target="_blank" rel="noreferrer">Browse repositories</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <footer class="footer">
-          <div class="muted small">© <span id="year"></span> Mohamed Salum — Portfolio</div>
-        </footer>
-      </div>
-    </section>
+    <section class="section container about-section" id="about"><div class="about-intro"><div><p class="eyebrow">About the provider</p><h2>Independent by design.<br><span class="serif">Personal by choice.</span></h2></div><div><p class="section-intro">Mosalum Digital is the independent service brand of Mohamed Salum. I bring hands-on IT support experience, an Information Systems Management degree and software, web and design work together for each client.</p><p class="muted">Based in Dar es Salaam, Tanzania. On-site work depends on location and scope; remote work can be discussed.</p><a class="text-link" href="about.html">More about my background <span aria-hidden="true">↗</span></a></div></div></section>
+    <section class="section container faq-section" id="faq"><div class="section-heading"><div><p class="eyebrow">A few useful details</p><h2>Questions, <span class="serif">answered.</span></h2></div><a class="text-link" href="contact.html">Ask about your project <span aria-hidden="true">↗</span></a></div><div class="faq-list"><details><summary>Do you work with individuals as well as businesses?</summary><p>Yes. Contact me with your need and I’ll confirm whether it fits the services I offer.</p></details><details><summary>Do you offer on-site support?</summary><p>On-site work can be discussed based on your location, the type of work and availability. Remote work may also be suitable.</p></details><details><summary>How much does a project cost?</summary><p>Cost depends on the work and scope. I’ll discuss the requirements and provide a quote before starting.</p></details><details><summary>Can you maintain a website or system after delivery?</summary><p>Ongoing support can be discussed as part of the project scope. The arrangements depend on the platform and the work required.</p></details></div></section>
+    <section class="section container contact-band"><div><p class="eyebrow">Start with a conversation</p><h2>Tell me what you’re trying to <span class="serif">get done.</span></h2><p class="section-intro">Share a little about your project and I’ll get back to you to discuss the next step.</p></div><div class="contact-band-actions"><a class="button button-primary" href="contact.html">Request a quote <span aria-hidden="true">↗</span></a><a class="text-link" href="MohamedCv.pdf" download="Mohamed-Salum-CV.pdf">Download CV <span aria-hidden="true">↓</span></a></div></section>
   </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">M</span><span>Mosalum Digital<span class="brand-dot">.</span></span></a><p>Independent IT &amp; Digital Services · Dar es Salaam, Tanzania</p><p>© <span id="year"></span> Mohamed Salum</p></div></footer>
+  <script src="nav.js" defer></script><script src="app.js" defer></script>
+<a class="whatsapp-float" href="https://wa.me/255678635302" target="_blank" rel="noopener noreferrer" aria-label="Start a WhatsApp conversation with Mohamed"><span class="wa-mark" aria-hidden="true">W</span><span>WhatsApp</span></a></body></html>
 
-  <div id="modal" class="modal" aria-hidden="true">
-    <div class="modal-backdrop" data-close="1"></div>
-    <div class="modal-body" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close="1" aria-label="Close project preview">✕</button>
-      <div class="modal-content">
-        <img id="modalImg" alt="" />
-        <div class="modal-meta">
-          <h3 id="modalTitle"></h3>
-          <p id="modalDesc" class="muted"></p>
-          <div id="modalTags" class="tag-row"></div>
-          <a id="modalLink" class="btn btn-ghost" href="#" target="_blank" rel="noreferrer" style="display:none;">Open Project</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="works-data.js"></script>
-  <script src="app.js"></script>
-</body>
-</html>

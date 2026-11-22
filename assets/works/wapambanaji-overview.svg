@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Wapambanaji VICOBA platform overview</title>
+  <desc id="desc">Feature map based on the public repository README. Member and staff workflows sit within group-scoped access, with role permissions, auditable financial records and PDF or Excel export hooks.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#20231d"/><stop offset="1" stop-color="#141612"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#c5f36b" stop-opacity=".14"/><stop offset=".5" stop-color="#c5f36b" stop-opacity=".8"/><stop offset="1" stop-color="#c5f36b" stop-opacity=".14"/></linearGradient>
+  </defs>
+  <rect width="1200" height="760" fill="url(#bg)"/>
+  <circle cx="1000" cy="98" r="190" fill="#c5f36b" opacity=".035"/>
+  <text x="74" y="76" fill="#c5f36b" font-family="monospace" font-size="15" letter-spacing="3">PUBLIC REPOSITORY · FEATURE MAP</text>
+  <text x="74" y="132" fill="#f1f0e9" font-family="Georgia,serif" font-size="42">Wapambanaji VICOBA</text>
+  <text x="74" y="166" fill="#9fa397" font-family="Arial,sans-serif" font-size="17">A group-scoped platform for member and staff financial workflows</text>
+  <rect x="74" y="218" width="1052" height="420" rx="18" fill="#171a15" stroke="#3a4032" stroke-width="2"/>
+  <text x="106" y="264" fill="#c5f36b" font-family="monospace" font-size="13" letter-spacing="2">VICOBA PLATFORM</text>
+  <rect x="106" y="292" width="430" height="96" rx="12" fill="#20241d" stroke="#454d3a"/>
+  <circle cx="150" cy="340" r="20" fill="#c5f36b" opacity=".15" stroke="#c5f36b"/>
+  <path d="M142 347v-3a8 8 0 0 1 16 0v3m-13-11a5 5 0 1 1 10 0 5 5 0 0 1-10 0" fill="none" stroke="#c5f36b" stroke-width="2" stroke-linecap="round"/>
+  <text x="188" y="334" fill="#f1f0e9" font-family="Arial,sans-serif" font-size="21" font-weight="600">Member portal</text>
+  <text x="188" y="359" fill="#9fa397" font-family="Arial,sans-serif" font-size="14">Member-facing workflows</text>
+  <rect x="664" y="292" width="430" height="96" rx="12" fill="#20241d" stroke="#454d3a"/>
+  <circle cx="708" cy="340" r="20" fill="#c5f36b" opacity=".15" stroke="#c5f36b"/>
+  <path d="M701 347v-3a7 7 0 0 1 14 0v3m-12-11a5 5 0 1 1 10 0 5 5 0 0 1-10 0" fill="none" stroke="#c5f36b" stroke-width="2" stroke-linecap="round"/>
+  <text x="746" y="334" fill="#f1f0e9" font-family="Arial,sans-serif" font-size="21" font-weight="600">Staff operations</text>
+  <text x="746" y="359" fill="#9fa397" font-family="Arial,sans-serif" font-size="14">Group-level administration</text>
+  <path d="M321 388v36h279m300-36v36H600v18" fill="none" stroke="url(#line)" stroke-width="2"/>
+  <rect x="370" y="442" width="460" height="76" rx="12" fill="#242a1d" stroke="#758551" stroke-width="2"/>
+  <text x="600" y="474" text-anchor="middle" fill="#f1f0e9" font-family="Arial,sans-serif" font-size="20" font-weight="600">Group-scoped access · RBAC</text>
+  <text x="600" y="497" text-anchor="middle" fill="#aeb49e" font-family="Arial,sans-serif" font-size="13">Multiple roles within each VICOBA group</text>
+  <path d="M600 518v27" fill="none" stroke="url(#line)" stroke-width="2"/>
+  <rect x="106" y="556" width="470" height="58" rx="10" fill="#1d211a" stroke="#3d4533"/>
+  <text x="341" y="591" text-anchor="middle" fill="#d9dfcb" font-family="Arial,sans-serif" font-size="15">Auditable financial records</text>
+  <rect x="624" y="556" width="470" height="58" rx="10" fill="#1d211a" stroke="#3d4533"/>
+  <text x="859" y="591" text-anchor="middle" fill="#d9dfcb" font-family="Arial,sans-serif" font-size="15">PDF / Excel export hooks</text>
+  <text x="74" y="696" fill="#838a7d" font-family="monospace" font-size="12">DOCUMENTED IN THE PUBLIC README · NOT A LIVE DEMO</text>
+</svg>
