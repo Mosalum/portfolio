@@ -68,3 +68,19 @@ body{background:var(--bg);color:var(--text)}
   .nav-service-menu a{min-height:48px;padding:8px 10px}
 }
 @media(max-width:380px){.brand{gap:7px;font-size:14px}.brand-mark{width:32px;height:32px}.menu-toggle{min-width:68px;padding-inline:9px}}
+
+.network-visual{width:100%;min-height:142px;display:flex;align-items:center;justify-content:center;flex:1;margin:2px 0 5px}
+.network-visual svg{display:block;width:min(100%,300px);height:auto;overflow:visible}
+.network-links path{fill:none;stroke:#8295c4;stroke-width:1.6;stroke-dasharray:4 6;stroke-linecap:round;animation:network-flow 2.2s linear infinite}
+.network-links path:nth-child(2){animation-delay:-.55s}.network-links path:nth-child(3){animation-delay:-1.1s}.network-links path:nth-child(4){animation-delay:-1.65s}
+.network-device{fill:#25345f;stroke:#b9c8ec;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
+.network-device circle{fill:#f3bd28;stroke:none}
+.network-router rect{fill:#202e55;stroke:#f3bd28;stroke-width:1.8}
+.network-router path{fill:none;stroke:#d6def2;stroke-width:1.7;stroke-linecap:round}
+.network-router circle{fill:#38d69a;animation:network-led 1.8s ease-in-out infinite alternate}.network-router circle:last-child{animation-delay:-.9s}
+.network-pulses circle{fill:none;stroke:#f3bd28;stroke-width:1.3;opacity:0;transform-box:fill-box;transform-origin:center;animation:network-pulse 2.8s ease-out infinite}
+.network-pulses circle:nth-child(2){animation-delay:.7s}.network-pulses circle:nth-child(3){animation-delay:1.4s}.network-pulses circle:nth-child(4){animation-delay:2.1s}
+@keyframes network-flow{to{stroke-dashoffset:-20}}
+@keyframes network-pulse{0%{opacity:.58;transform:scale(.72)}85%,100%{opacity:0;transform:scale(1.5)}}
+@keyframes network-led{to{opacity:.35}}
+@media(prefers-reduced-motion:reduce){.network-links path,.network-router circle,.network-pulses circle{animation:none!important}.network-links path{stroke-dasharray:none}.network-pulses circle{opacity:.16;transform:none}}
