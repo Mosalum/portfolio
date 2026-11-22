@@ -1,92 +1,202 @@
 [
   {
-    "id": "w1_ikupa_finance",
-    "title": "IKUPA FINANCE",
-    "category": "Graphics Design",
-    "thumb": "assets/works/ikupa.jpg",
-    "description": "Promotional graphic design for IKUPA Finance focused on clear branding, clean layout, and stronger visual communication for marketing campaigns.",
-    "tags": ["Photoshop", "Branding", "Marketing"],
-    "link": ""
+    "id": "wapambanaji-vicoba",
+    "title": "Wapambanaji VICOBA",
+    "category": "Software & Web",
+    "categories": [
+      "Software & Web"
+    ],
+    "status": "In Progress",
+    "featured": true,
+    "image": "assets/works/wapambanaji-overview.svg",
+    "imageAlt": "Feature map from the public repository README showing member and staff workflows, group-scoped role access, auditable financial records, and export hooks.",
+    "overview": "A Laravel and Vue platform codebase for group-scoped VICOBA financial workflows, documented in the public repository.",
+    "objective": "Provide a shared platform for VICOBA group financial work with separate member and staff operations.",
+    "role": "Published the application code and documented the local setup and architecture in the public repository.",
+    "approach": "The README describes group-scoped tenancy, role-based access per group, member and staff workflows, audit logs, transactional financial writes, and PDF or Excel export hooks.",
+    "result": "The repository documents these platform capabilities. No live deployment or test report is provided, so production use and measured impact are not claimed.",
+    "tools": [
+      "Laravel 10",
+      "Inertia",
+      "Vue 3",
+      "MySQL 8"
+    ],
+    "source": "https://github.com/Mosalum/wapambanaji/tree/main/app"
   },
   {
-    "id": "w2_kizingo_electronics",
-    "title": "KIZINGO ELECTRONICS",
-    "category": "Graphics Design",
-    "thumb": "assets/works/Kizingo.jpg",
-    "description": "Product-focused design concept for Kizingo Electronics created to highlight offers, improve visibility, and present the brand in a professional way.",
-    "tags": ["Photoshop", "Advertising", "Visual Design"],
-    "link": ""
+    "id": "ikupa-finance",
+    "title": "IKUPA Finance",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": true,
+    "image": "assets/works/optimized/ikupa.jpg",
+    "imageAlt": "IKUPA Finance promotional artwork",
+    "overview": "Promotional artwork for IKUPA Finance, presented in the original portfolio as a marketing visual.",
+    "objective": "Communicate the financial brand and campaign message through a clear promotional layout.",
+    "role": "Created the promotional graphic shown in the portfolio.",
+    "approach": "Focused on brand presence, message clarity, and a clean visual hierarchy.",
+    "result": "A campaign-ready visual asset for marketing communication.",
+    "tools": [
+      "Graphic design",
+      "Branding",
+      "Marketing"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w3_laundry_promo",
-    "title": "LAUNDRY PROMO",
-    "category": "Graphics Design",
-    "thumb": "assets/works/Laundry.jpg",
-    "description": "Clean promotional artwork for a laundry service designed to communicate convenience, freshness, and service value at a glance.",
-    "tags": ["Photoshop", "Flyer", "Promotion"],
-    "link": ""
+    "id": "kizingo-electronics",
+    "title": "Kizingo Electronics",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": true,
+    "image": "assets/works/optimized/Kizingo.jpg",
+    "imageAlt": "Kizingo Electronics product promotional artwork",
+    "overview": "Product-focused promotional design for Kizingo Electronics.",
+    "objective": "Present products and offers in a way that is easy to notice and understand.",
+    "role": "Created the promotional design shown in the portfolio.",
+    "approach": "Used a product-led composition and clear visual hierarchy.",
+    "result": "A professional promotional visual for brand and product visibility.",
+    "tools": [
+      "Graphic design",
+      "Advertising",
+      "Visual communication"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w4_ttcl_campaign",
-    "title": "TTCL CAMPAIGN",
-    "category": "Graphics Design",
-    "thumb": "assets/works/ttcl.jpg",
-    "description": "Campaign visual prepared for TTCL with a focus on brand presence, message clarity, and eye-catching layout for public promotion.",
-    "tags": ["Photoshop", "Campaign", "Branding"],
-    "link": ""
+    "id": "laundry-promo",
+    "title": "Laundry Promo",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": true,
+    "image": "assets/works/optimized/Laundry.jpg",
+    "imageAlt": "Promotional artwork for a laundry service",
+    "overview": "Promotional artwork for a laundry service.",
+    "objective": "Explain the service value quickly and make the offer easy to scan.",
+    "role": "Created the promotional artwork shown in the portfolio.",
+    "approach": "Kept the layout clean and emphasized the ideas of convenience and freshness.",
+    "result": "A concise marketing visual for the service.",
+    "tools": [
+      "Graphic design",
+      "Flyer",
+      "Promotion"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w5_special_offer_tangazo",
-    "title": "TANGAZO DESIGN",
-    "category": "Graphics Design",
-    "thumb": "assets/works/tangazo.jpg",
-    "description": "Advertisement poster concept created to highlight key information clearly while maintaining a bold and attractive visual style.",
-    "tags": ["Poster", "Advertising", "Promotion"],
-    "link": ""
+    "id": "ttcl-campaign",
+    "title": "TTCL Campaign",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": false,
+    "image": "assets/works/ttcl.jpg",
+    "imageAlt": "TTCL campaign artwork",
+    "overview": "Campaign visual prepared for TTCL and included in the original portfolio.",
+    "objective": "Support a public-facing campaign with a recognizable brand and readable message.",
+    "role": "Prepared the campaign visual shown in the portfolio.",
+    "approach": "Focused on brand presence, message clarity, and an attention-catching layout.",
+    "result": "A campaign visual for public promotion.",
+    "tools": [
+      "Graphic design",
+      "Campaign",
+      "Branding"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w6_sticker_branding",
-    "title": "STICKER BRANDING",
-    "category": "Graphics Design",
-    "thumb": "assets/works/sticker.jpg",
-    "description": "Sticker design concept built for brand visibility with a compact layout, strong identity elements, and practical print-ready presentation.",
-    "tags": ["Sticker", "Branding", "Print Design"],
-    "link": ""
+    "id": "tangazo-design",
+    "title": "Tangazo Design",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": false,
+    "image": "assets/works/tangazo.jpg",
+    "imageAlt": "Advertisement poster design",
+    "overview": "Advertisement poster concept from the original portfolio.",
+    "objective": "Make the key information easy to find in a bold promotional layout.",
+    "role": "Created the poster concept shown in the portfolio.",
+    "approach": "Used a strong visual style with a clear information hierarchy.",
+    "result": "A promotional poster concept for advertising.",
+    "tools": [
+      "Graphic design",
+      "Poster",
+      "Advertising"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w7_sally_promo",
-    "title": "SALLY PROMO",
-    "category": "Graphics Design",
-    "thumb": "assets/works/sally.jpg",
-    "description": "Promotional social media design created to present an offer or campaign in a polished and engaging format for online audiences.",
-    "tags": ["Social Media", "Promotion", "Photoshop"],
-    "link": ""
+    "id": "sticker-branding",
+    "title": "Sticker Branding",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": false,
+    "image": "assets/works/sticker.jpg",
+    "imageAlt": "Compact branded sticker design",
+    "overview": "Compact sticker design concept for brand visibility.",
+    "objective": "Adapt identity elements into a small, practical format.",
+    "role": "Created the sticker design concept shown in the portfolio.",
+    "approach": "Built a compact composition around recognizable brand elements.",
+    "result": "A sticker concept presented in a print-ready style.",
+    "tools": [
+      "Graphic design",
+      "Branding",
+      "Print design"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w8_mockup_presentation",
-    "title": "MOCK-UP PRESENTATION",
-    "category": "Graphics Design",
-    "thumb": "assets/works/mock-up.jpg",
-    "description": "Visual mock-up prepared to showcase design presentation in a more realistic and professional setting for clients or portfolio display.",
-    "tags": ["Mockup", "Presentation", "Visual Design"],
-    "link": ""
+    "id": "sally-promo",
+    "title": "Sally Promo",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": false,
+    "image": "assets/works/optimized/sally.jpg",
+    "imageAlt": "Sally promotional social media design",
+    "overview": "Promotional social media design included in the original portfolio.",
+    "objective": "Present an offer or campaign in a polished, easy-to-scan format.",
+    "role": "Created the promotional design shown in the portfolio.",
+    "approach": "Designed for digital sharing with a clear campaign message.",
+    "result": "A promotional visual for online audiences.",
+    "tools": [
+      "Graphic design",
+      "Social media",
+      "Promotion"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   },
   {
-    "id": "w9_anniversary_design",
-    "title": "ANNIVERSARY DESIGN",
-    "category": "Graphics Design",
-    "thumb": "assets/works/anniversary.jpg",
-    "description": "Celebration-themed graphic designed to mark an anniversary with a balanced composition, event tone, and attractive visual hierarchy.",
-    "tags": ["Event Design", "Celebration", "Poster"],
-    "link": ""
-  },
-  {
-    "id": "w10_ifaith_logo",
-    "title": "IFAITH LOGO",
-    "category": "Graphics Design",
-    "thumb": "assets/works/ifaith-logo.png",
-    "description": "Logo design created to establish a memorable and professional identity with simple, recognizable, and brand-friendly visual elements.",
-    "tags": ["Logo", "Brand Identity", "Design"],
-    "link": ""
+    "id": "anniversary-design",
+    "title": "Anniversary Design",
+    "category": "Graphic Design",
+    "status": "Concept",
+    "featured": false,
+    "image": "assets/works/optimized/anniversary.jpg",
+    "imageAlt": "Anniversary celebration design",
+    "overview": "Celebration-themed graphic design included in the original portfolio.",
+    "objective": "Mark an anniversary with a visual suited to the event.",
+    "role": "Created the anniversary design shown in the portfolio.",
+    "approach": "Balanced the event tone with an organized composition and visual hierarchy.",
+    "result": "An event visual for an anniversary celebration.",
+    "tools": [
+      "Graphic design",
+      "Event design",
+      "Poster"
+    ],
+    "categories": [
+      "Graphic Design"
+    ]
   }
 ]

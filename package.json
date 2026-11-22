@@ -1,0 +1,11 @@
+{
+  "name": "mohamed-salum-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node build.mjs",
+    "preview": "python -m http.server 4173",
+    "build:site": "node build-site.mjs",
+    "admin": "node cms/server.mjs"
+  }
+}
