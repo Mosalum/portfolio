@@ -1,4 +1,4 @@
-﻿# Mosalum Digital
+# Mosalum Digital
 
 Portfolio ya kujitegemea ya Mohamed Salum kwa huduma za IT, miundombinu, software na web development, nyaraka za kiufundi na usanifu wa michoro. Tovuti ni static, haina framework wala dependencies za ziada, na inafaa GitHub Pages. Jina la umma ni Mosalum Digital; halidai kuwa kampuni imesajiliwa.
 
@@ -33,7 +33,7 @@ Push kwenda `main` huanzisha GitHub Actions kujenga na kuchapisha GitHub Pages. 
 
 ## Maudhui yaliyopo na faragha
 
-Gallery ina kazi 9 zilizopo, ikiwemo michoro 8 na Wapambanaji VICOBA kulingana na maudhui ya umma ya GitHub. Hakuna takwimu wala madai ya deployment yaliyothibitishwa kwa VICOBA. Wasifu umetumia CV iliyokuwepo. Hakukuwa na ushahidi wa umma wa miradi ya hospitali, CCTV, mitandao au nyaraka za IT kwenye nakala ya portfolio.
+Gallery ina kazi 9 zilizopo, ikiwemo michoro 8 na Wapambanaji VICOBA iliyokamilika. Maelezo ya VICOBA yametokana na screenshot ya dashboard iliyotolewa; source repository ni private na haijaunganishwa hadharani. Wasifu umetumia CV iliyokuwepo. Hakukuwa na ushahidi wa umma wa miradi ya hospitali, CCTV, mitandao au nyaraka za IT kwenye nakala ya portfolio.
 
 Alama ya profile hutumia picha ya `pass.png` iliyokuwepo kwenye mradi. Alama ya WhatsApp imetolewa kwenye [favicon rasmi ya WhatsApp](https://www.whatsapp.com/favicon.ico), imeachwa bila kubadilishwa na imewekwa kama alama ndogo kando ya maandishi “WhatsApp”.
 

@@ -6,22 +6,21 @@
     "categories": [
       "Software & Web"
     ],
-    "status": "In Progress",
+    "status": "Completed",
     "featured": true,
     "image": "assets/works/wapambanaji-dashboard.png",
     "imageAlt": "Dashboard screenshot of the Wapambanaji VICOBA web app, showing finance summary cards and administrative navigation.",
-    "overview": "A Laravel and Vue platform codebase for group-scoped VICOBA financial workflows, documented in the public repository.",
-    "objective": "Provide a shared platform for VICOBA group financial work with separate member and staff operations.",
-    "role": "Published the application code and documented the local setup and architecture in the public repository.",
-    "approach": "The README describes group-scoped tenancy, role-based access per group, member and staff workflows, audit logs, transactional financial writes, and PDF or Excel export hooks.",
-    "result": "The repository documents these platform capabilities. No live deployment or test report is provided, so production use and measured impact are not claimed.",
+    "overview": "Completed web app for managing Wapambanaji VICOBA operations, with an administrator dashboard for finance and member activities.",
+    "objective": "Bring core VICOBA group administration and financial activities together in a web-based management system.",
+    "role": "Built and completed the Wapambanaji VICOBA web application and its management dashboard.",
+    "approach": "Organized key operations in one dashboard, with sections for attendance, contributions, fines, loans, expenses, members, meeting summaries, reports, settings, and audit history.",
+    "result": "The completed application brings these management areas together in a single dashboard. The supplied screenshot shows the administrator view. The source repository is private and is not linked publicly.",
     "tools": [
       "Laravel 10",
       "Inertia",
       "Vue 3",
       "MySQL 8"
-    ],
-    "source": "https://github.com/Mosalum/wapambanaji/tree/main/app"
+    ]
   },
   {
     "id": "ikupa-finance",
