@@ -197,5 +197,35 @@
     "categories": [
       "Graphic Design"
     ]
+  },
+  {
+    "id": "vehicles-ledger-system",
+    "title": "Vehicles Ledger System",
+    "category": "Software & Web",
+    "categories": [
+      "Software & Web"
+    ],
+    "status": "Completed",
+    "featured": false,
+    "image": "assets/works/vehicles-ledger-system-1795444813396-659efc.png",
+    "imageAlt": "Bajaji Ledger is a web-based bajaji fleet and financial management system featuring a modern, responsive dashboard with a dark-mode interface. The dashboard provides an overview of daily income, total expenses, and net e",
+    "overview": "Bajaji Ledger is a management system designed to simplify and streamline bajaji operations by providing a centralized platform for managing bajaji records, driver information, daily income collections, expenses, fuel costs, maintenance, service records, debts, and payment tracking. The system helps monitor financial performance by automatically calculating total revenue, operational expenses, and net profit while gen",
+    "objective": "Lack of an integrated system for tracking bajaji income, expenses, and performance, leading to challenges in financial management, driver accountability, and business monitoring.",
+    "role": "Designed and developed a centralized Bajaji Ledger management system for tracking vehicle records, daily income, expenses, driver performance, and financial reports, improving operational efficiency, accountability, and financial transparency.",
+    "approach": "PHP, MySQL, HTML, CSS, JavaScript, Bootstrap, and Visual Studio Code, using database management, responsive web development, and financial record-tracking techniques.",
+    "result": "Successfully developed a functional Bajaji Ledger system with a centralized dashboard for monitoring income, expenses, vehicle performance, and financial records, providing improved accuracy, transparency, and easier business decision-making.",
+    "tools": [
+      "PHP",
+      "MySQL",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Bootstrap",
+      "Visual Studio Code",
+      "and XAMPP for web development",
+      "database management",
+      "and system deployment."
+    ],
+    "source": "https://github.com/mosalum/bajaji-ledger"
   }
 ]

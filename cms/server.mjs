@@ -59,7 +59,7 @@ async function publish(message) {
   const aheadFiles = await git(["diff", "--name-only", upstream + "..HEAD"]);
   const unrelated = aheadFiles.split(/\r?\n/).filter(Boolean).filter(file => file !== "works.json" && !file.startsWith("projects/") && !file.startsWith("assets/works/"));
   if (unrelated.length) throw new Error("Branch ina commit za mabadiliko mengine ambayo hayajapushwa. Sukuma au tenganisha hizo commit kwanza.");
-  await exec(process.platform === "win32" ? "npm.cmd" : "npm", ["run", "build"], { cwd: root, windowsHide: true, timeout: 120_000, maxBuffer: 2_000_000 });
+  await exec(process.execPath, [path.join(root, "build.mjs")], { cwd: root, windowsHide: true, timeout: 120_000, maxBuffer: 2_000_000 });
   await git(["add", "--", "works.json", "projects", "assets/works"]);
   const changed = await git(["diff", "--cached", "--name-only"]);
   const commitMessage = "Publish portfolio work: " + (clean(message, 100) || "update project");
@@ -73,7 +73,7 @@ async function publish(message) {
     }
   }
   await git(["push", "origin", "HEAD:refs/heads/" + branch]);
-  return { branch, message: (changed ? "Kazi imecommit-iwa na kusukumwa" : "Commit ya kazi imesukumwa") + " GitHub kwenye tawi " + branch + "." };
+  return { branch, message: (changed ? "Kazi imecommit-iwa na kusukumwa" : "Commit ya kazi imesukumwa") + " GitHub kwenye tawi " + branch + "." + (branch === "main" ? " GitHub Pages itasasisha portfolio ya mtandaoni baada ya deployment kukamilika. Unaweza kufuatilia kwenye GitHub Actions." : " Unganisha branch hii na main ili portfolio ya mtandaoni isasishwe.") };
 }
 
 const server = createServer(async (req, res) => {
@@ -104,8 +104,23 @@ const server = createServer(async (req, res) => {
     if (relative === "/admin.html" || relative === "/admin") relative = "/cms/public/index.html";
     if (relative === "/admin.js") relative = "/cms/public/admin.js";
     if (relative === "/admin.css") relative = "/cms/public/admin.css";
-    const file = path.resolve(root, "." + relative); if (!file.startsWith(root + path.sep)) return send(res, 404, { error: "Haijapatikana." });
-    const info = await stat(file); if (!info.isFile()) return send(res, 404, { error: "Haijapatikana." });
+    let file = path.resolve(root, "." + relative); if (!file.startsWith(root + path.sep)) return send(res, 404, { error: "Haijapatikana." });
+    let info;
+    try {
+      info = await stat(file);
+      if (info.isDirectory()) {
+        if (!url.pathname.endsWith("/")) {
+          res.writeHead(301, { Location: url.pathname + "/" + url.search });
+          return res.end();
+        }
+        file = path.join(file, "index.html");
+        info = await stat(file);
+      }
+    } catch (error) {
+      if (error.code === "ENOENT" || error.code === "ENOTDIR") return send(res, 404, { error: "Haijapatikana." });
+      throw error;
+    }
+    if (!info.isFile()) return send(res, 404, { error: "Haijapatikana." });
     const headers = { "Content-Type": mime.get(path.extname(file).toLowerCase()) || "application/octet-stream", "X-Content-Type-Options": "nosniff", "Referrer-Policy": "no-referrer", "Content-Security-Policy": "default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'" };
     if (adminPage || relative.startsWith("/cms/public/")) { headers["Set-Cookie"] = "portfolio_local_session=" + sessionToken + "; HttpOnly; SameSite=Strict; Path=/; Max-Age=28800"; headers["Cache-Control"] = "no-store"; }
     res.writeHead(200, headers); if (req.method === "HEAD") return res.end(); res.end(await readFile(file));
